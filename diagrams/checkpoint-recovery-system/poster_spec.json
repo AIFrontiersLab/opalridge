@@ -1,0 +1,58 @@
+{
+  "boxes": [
+    {
+      "detail": "Orchestrates the saving and loading of model states using a background thread to avoid blocking the main training process.",
+      "id": "b1",
+      "label": "Checkpoint Manager"
+    },
+    {
+      "detail": "A reliable and scalable storage solution (e.g., S3, NFS) that supports atomic file operations to ensure checkpoint integrity.",
+      "id": "b2",
+      "label": "Storage System"
+    },
+    {
+      "detail": "Ensures that the model can be restored to the exact state of the last verified checkpoint, including optimizer states and RNG seeds for reproducibility.",
+      "id": "b3",
+      "label": "Recovery Module"
+    },
+    {
+      "detail": "The ongoing process of training the model, which periodically triggers checkpoint saving.",
+      "id": "b4",
+      "label": "Model Training Process"
+    },
+    {
+      "detail": "Validates the integrity of checkpoints before they are used for recovery.",
+      "id": "b5",
+      "label": "Integrity Verifier"
+    }
+  ],
+  "flows": [
+    {
+      "from": "b4",
+      "label": "1. Trigger Checkpoint Save",
+      "to": "b1"
+    },
+    {
+      "from": "b1",
+      "label": "2. Save Checkpoint Asynchronously",
+      "to": "b2"
+    },
+    {
+      "from": "b2",
+      "label": "3. Store and Verify Integrity",
+      "to": "b5"
+    },
+    {
+      "from": "b5",
+      "label": "4. Retrieve and Validate Checkpoint",
+      "to": "b3"
+    },
+    {
+      "from": "b3",
+      "label": "5. Restore Model State",
+      "to": "b4"
+    }
+  ],
+  "subtitle": "Ensuring Robust Model Training with Asynchronous Checkpointing",
+  "title": "Checkpoint Recovery System"
+}

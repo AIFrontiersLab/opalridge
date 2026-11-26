@@ -1,0 +1,9 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: checkpoint-recovery-system
+  namespace: checkpoint-recovery-system
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels: {app.kubernetes.io/name: checkpoint-recovery-system}

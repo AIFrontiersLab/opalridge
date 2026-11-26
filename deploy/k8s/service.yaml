@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkpoint-recovery-system
+  namespace: checkpoint-recovery-system
+spec:
+  selector: {app.kubernetes.io/name: checkpoint-recovery-system}
+  ports: [{port: 80, targetPort: 8080}]

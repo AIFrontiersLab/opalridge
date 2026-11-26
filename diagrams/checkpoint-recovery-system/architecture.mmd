@@ -1,0 +1,26 @@
+flowchart LR
+  b1["Checkpoint Manager"]
+  b2["Storage System"]
+  b3["Recovery Module"]
+  b4["Model Training Process"]
+  b5["Integrity Verifier"]
+  b4 -->|1. Trigger Checkpoint Save| b1
+  b1 -->|2. Save Checkpoint Asynchronously| b2
+  b2 -->|3. Store and Verify Integrity| b5
+  b5 -->|4. Retrieve and Validate Checkpoint| b3
+  b3 -->|5. Restore Model State| b4
+
+flowchart TB
+  subgraph happy [Happy path]
+    h_b1["Checkpoint Manager"]
+    h_b2["Storage System"]
+    h_b3["Recovery Module"]
+    h_b4["Model Training Process"]
+    h_b5["Integrity Verifier"]
+    h_b1 --> h_b2
+    h_b2 --> h_b3
+    h_b3 --> h_b4
+    h_b4 --> h_b5
+  end
+  fail["Failure / abstain"]
+  h_b5 -.-> fail

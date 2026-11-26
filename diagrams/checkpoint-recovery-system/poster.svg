@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+<rect width="100%" height="100%" fill="#FAF7F0"/>
+<text x="56" y="64" fill="#1A4BFF" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="700">AI FRONTIERS FORUM</text>
+<text x="56" y="120" fill="#0B1F3A" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="700">Checkpoint Recovery System</text>
+<text x="56" y="168" fill="#5A6B7D" font-size="22" font-family="Arial, Helvetica, sans-serif">Ensuring Robust Model Training with Asynchronous Checkpointing</text>
+<rect x="48.0" y="280.0" width="293.3" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="68.0" y="320.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Checkpoint Manager</text>
+<text x="68.0" y="358.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Orchestrates the saving and loading</text>
+<text x="68.0" y="384.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">of model states using a background</text>
+<text x="68.0" y="410.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">thread to avoid blocking the main</text>
+<text x="68.0" y="436.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">training process.</text>
+<rect x="365.3" y="280.0" width="293.3" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="385.3" y="320.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Storage System</text>
+<text x="385.3" y="358.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">A reliable and scalable storage</text>
+<text x="385.3" y="384.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">solution (e.g., S3, NFS) that</text>
+<text x="385.3" y="410.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">supports atomic file operations to</text>
+<text x="385.3" y="436.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">ensure checkpoint integrity.</text>
+<rect x="682.7" y="280.0" width="293.3" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="702.7" y="320.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Recovery Module</text>
+<text x="702.7" y="358.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Ensures that the model can be</text>
+<text x="702.7" y="384.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">restored to the exact state of the</text>
+<text x="702.7" y="410.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">last verified checkpoint, including</text>
+<text x="702.7" y="436.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">optimizer states and RNG seeds for</text>
+<text x="702.7" y="462.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">reproducibility.</text>
+<rect x="48.0" y="524.0" width="293.3" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="68.0" y="564.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Model Training Process</text>
+<text x="68.0" y="602.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">The ongoing process of training the</text>
+<text x="68.0" y="628.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">model, which periodically triggers</text>
+<text x="68.0" y="654.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">checkpoint saving.</text>
+<rect x="365.3" y="524.0" width="293.3" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="385.3" y="564.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Integrity Verifier</text>
+<text x="385.3" y="602.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Validates the integrity of</text>
+<text x="385.3" y="628.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">checkpoints before they are used for</text>
+<text x="385.3" y="654.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">recovery.</text>
+<text x="56" y="1496" fill="#5A6B7D" font-size="16" font-family="Arial, Helvetica, sans-serif">For more AI learning, register free:  https://aifrontiersforum.org/join</text>
+</svg>

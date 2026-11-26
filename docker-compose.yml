@@ -1,0 +1,9 @@
+services:
+  checkpoint-recovery-system:
+    build: .
+    ports: ["8080:8080"]
+    environment:
+      CHECKPOINT_RECOVERY_SYSTEM_CONFIG: /app/config/development.toml
+      CHECKPOINT_RECOVERY_SYSTEM_HTTP__HOST: 0.0.0.0
+    volumes:
+      - ./var:/app/var

@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: checkpoint-recovery-system-ingress
+  namespace: checkpoint-recovery-system
+spec:
+  podSelector:
+    matchLabels: {app.kubernetes.io/name: checkpoint-recovery-system}
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels: {kubernetes.io/metadata.name: gateway}
+      ports: [{port: 8080}]
